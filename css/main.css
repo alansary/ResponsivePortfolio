@@ -1,0 +1,243 @@
+/*CSS Rule(Selector(Declaration(Properity, Value)))*/
+/* Cascading Style Sheet (new rules overwrites the previous rules) */
+
+
+/**************
+    GENERAL
+***************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*#id*/
+#wrapper{
+    max-width: 940px;
+    margin: 0 auto; /*values of vertical and horizontal margins*/
+    padding: 0 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+    font-weight: 800;
+}
+
+
+
+/**************
+    HEADING
+***************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+#logo{
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Changa One', sans-serif;
+    margin: 15px 0;
+    font-size: 1.75em; /*1em == 16px (by default)*//*.75 larger relative to the default size (smaller by 25%)*/
+    /*You can use absolute measurement using pixels (px) rather than the relative measurement using em*/
+    font-weight: normal; /*un-bold our headline (They are bold by default)*/
+    line-height: 0.8em; /*Determines the amount of space between each line of text*/
+}
+
+h2 {
+    font-size: .75em;
+    margin: -5px 0 0; /*Values are of top, left and right, and bottom margins, -ve puts the element closer rather than pushing it away of the elements above it*/
+    font-weight: normal;
+}
+
+
+
+
+/**************
+   NAVIGATION
+***************/
+
+nav {
+    text-align: center;
+    padding: 10px, 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+/* block-level elements will take up space in the page and appear to push other things out of the way like section and div */
+/* inline-level elements are mostly just text (it appears in the same line) */
+/* inline-block will get itms side by side (inline) but it will maintain other block-level features such as having a width and height */
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 800;
+    padding: 15px 9px;
+}
+
+
+
+/**************
+     FOOTER
+***************/
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    clear: both; /* To un-apply the changes of float */
+    padding-top: 50px;
+    color: #ccc;
+}
+
+
+footer a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+/*
+.social-img{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+*/
+
+
+
+/**************
+PAGE: PORTFOLIO
+***************/
+
+#Gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#Gallery li {
+    float: left;
+    width: 45%; /* 54% of the parent (#wrapper in our case) */
+    margin: 2.5%;
+    /* This will make a room for two list items with a remainder of 10% which is distributed into 2.5 * 4 margins */
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#Gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+}
+
+
+
+/**************
+  PAGE: ABOUT
+***************/
+
+.profile-photo {
+    display: block; /* Allow us to use auto margin to center the element on the page */
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 10%;
+    max-height: 150px;
+}
+
+
+
+/**************
+ PAGE: CONTACT
+***************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat; /* background-image by default will repeat, we need them to be displayed only once */
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+
+
+/**************
+    COLORS
+***************/
+
+body{
+    background-color: #fff;
+    color: #999;
+}
+
+header{
+    background: #6ab47b;
+    border-color: #599a68;
+}
+
+nav{
+    background: #599a68;
+}
+
+/* We use selector specificity to apply colors to the anchors within the navigation because the browser will be more
+   specific than us if we just used nav as a selector instead of nav a (descendant selector) */
+/*visited is a sudo class used with anchors*/
+nav a, nav a:visited{
+    color: #fff;
+}
+
+/*hover is a sudo class used with anchors and selected is a class*/
+nav a.selected, nav a:hover{
+    color: #32673f;
+}
+
+/*This is a shorthand for coding RGB colors*/
+/*logo text*/
+h1, h2{
+    color: #fff;
+}
+
+/*RGB color (Hexadecimal Coding)*/
+a {
+    color: #6ab47b;
+}

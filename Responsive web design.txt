@@ -1,0 +1,16 @@
+mobile-first approach
+responsive web design
+	use % (relative-unit) rather than px (fixed-unit)
+	use max-width rather than width
+	use min-width rather than width
+	use max-height rather than height
+	use min-height rather than height
+	use the css rule called media query
+inside each css media query rule we will add additional css rules that will be applied if the conditions are true
+	add viewport meta tag that allow us to control the size of the browser window on mobile devices so that instead of site visitors zooming
+		around the page, our layout will be look for the size of the window
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		before this line the desktop layout will render on mobile devices instead of mobile devices render
+		that means the viewport (which is the name) should be set to the value for the content (which is the width of our website should be scaled
+			so that its equal to the width of the mobile device screen and the initial-scale should be set to 1.0 because setting it to another
+			value will make it larger or smaller than we want)

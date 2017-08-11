@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- hyper text (any text that can be displayed on a computer screen) markup (code describes the structure of the content) language -->
+<html>
+    <head>
+        <meta charset="utf-8"> <!-- charset is the universal character set transformation format 8-bit (attribute) -->
+        <title>Mohamed Alansary | Software Engineer</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- normalize.css will reset the default browser styles (every browser applies its default styling) -->
+        <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <style>
+            style tag that contains different style rules, rule(selector(declarations(property, value)))
+            selector {
+                property1: value1;
+                property2: value2;
+                ...
+                propertyn: valuen;
+            }
+        </style> -->
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo"> <!-- Anchor a url to a text in the page -->
+                <h1>Mohamed Alansary</h1>
+                <h2>Software Engineer</h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="selected">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="wrapper">
+            <section>
+                <ul id="Gallery">
+                    <li>
+                        <a href="img/numbers-01.jpg">
+                            <img src="img/numbers-01.jpg" alt=""> <!-- This is a relative path (not absolute path) -->
+                            <p>Experimentation with color and texture.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/numbers-02.jpg">
+                            <img src="img/numbers-02.jpg" alt="">
+                            <p>Playing with blending mode in photoshop.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/numbers-06.jpg">
+                            <img src="img/numbers-06.jpg" alt="">
+                            <p>Trying to create an 80's style of glows.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/numbers-09.jpg">
+                            <img src="img/numbers-09.jpg" alt="">
+                            <p>Drips created using photoshop brushes.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/numbers-12.jpg">
+                            <img src="img/numbers-12.jpg" alt="">
+                            <p>Creating shapes using repetition.</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-img"></a>
+                <a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-img"></a>
+                <p>&copy; 2016 Mohamed Alansary.</p>
+            </footer>
+        </div>
+    </body>
+</html>
